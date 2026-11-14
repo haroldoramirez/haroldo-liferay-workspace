@@ -1,6 +1,6 @@
 Bundle-Name: Angular Liferay Start Portlet
 Bundle-SymbolicName: angular.liferay.start.portlet
-Bundle-Description: Módulo responsável pela comunicação entra o portlet e uma API externa. Tipo NPM Angular Portlet.
+Bundle-Description: Módulo responsável pela comunicação a uma API externa. Tipo NPM Angular Portlet.
 Bundle-Copyright: Haroldo
 Bundle-Category: Angular
 # Bundle-Version: 1.0.0 versão gerada dinamicamente no arquivo pom.xml
