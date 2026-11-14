@@ -1,6 +1,9 @@
-Bundle-Name: angular-liferay-start-portlet
+Bundle-Name: Angular Liferay Start Portlet
 Bundle-SymbolicName: angular.liferay.start.portlet
-Bundle-Version: 1.0.0
+Bundle-Description: Módulo responsável pela comunicação entra o portlet e uma API externa. Tipo NPM Angular Portlet.
+Bundle-Copyright: Haroldo
+Bundle-Category: Angular
+# Bundle-Version: 1.0.0 versão gerada dinamicamente no arquivo pom.xml
 Export-Package: angular.liferay.start.portlet.constants
 Provide-Capability:\
 	liferay.language.resources;\

@@ -9,7 +9,7 @@
 	<parent>
 		<groupId>haroldo.liferay.workspace</groupId>
 		<artifactId>haroldo-liferay-workspace</artifactId>
-		<version>1.0.0</version>
+		<version>1.3.0</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>haroldo-liferay-workspace-themes</artifactId>
