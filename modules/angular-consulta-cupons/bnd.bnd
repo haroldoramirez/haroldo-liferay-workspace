@@ -1,0 +1,21 @@
+Bundle-Name: Angular Consulta Cupons
+Bundle-SymbolicName: angular.consulta.cupons
+Bundle-Description: Módulo responsável pela comunicação entra o portlet e uma API externa. Tipo NPM Angular Portlet.
+Bundle-Copyright: Haroldo
+Bundle-Category: Angular
+# Bundle-Version: 1.0.0 versão gerada dinamicamente no arquivo pom.xml
+Export-Package: angular.consulta.cupons.constants
+Provide-Capability:\
+	liferay.language.resources;\
+		resource.bundle.base.name="content.Language"
+Web-ContextPath: /angular-consulta-cupons
+-consumer-policy: ${replacestring;${range;[==,==]};.*,(.*)];$1}
+-jsp: *.jsp,*.jspf,*.jspx
+-metatype: *
+-plugin.jsp: com.liferay.ant.bnd.jsp.JspAnalyzerPlugin
+-plugin.metatype: com.liferay.ant.bnd.metatype.MetatypePlugin
+-plugin.npm: com.liferay.ant.bnd.npm.NpmAnalyzerPlugin
+-plugin.resourcebundle: com.liferay.ant.bnd.resource.bundle.ResourceBundleLoaderAnalyzerPlugin
+-plugin.sass: com.liferay.ant.bnd.sass.SassAnalyzerPlugin
+-provider-policy: ${replacestring;${range;[==,==]};.*,(.*)];$1}
+-sass: *
