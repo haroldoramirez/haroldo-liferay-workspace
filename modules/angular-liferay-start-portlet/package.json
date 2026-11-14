@@ -1,6 +1,6 @@
 {
 	"name": "angular-liferay-start-portlet",
-	"version": "1.3.0",
+	"version": "1.0.0",
 	"description": "Angular Portlet para Liferay 7.4",
 	"main": "lib/angular-loader.js",
 	"scripts": {

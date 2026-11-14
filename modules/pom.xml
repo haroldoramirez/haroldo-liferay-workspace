@@ -12,6 +12,5 @@
 	<packaging>pom</packaging>
 	<modules>
     <module>angular-liferay-start-portlet</module>
-    <module>angular-consulta-cupons</module>
   </modules>
 </project>
