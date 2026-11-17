@@ -1,5 +1,0 @@
-{
-	"create-jar": false,
-	"dump-report": true,
-	"output": "target/classes/META-INF/resources"
-}

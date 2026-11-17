@@ -81,6 +81,7 @@
 	<!-- ================= BUILDS AND PLUGINS ================= -->
 	<build>
 		<plugins>
+
 			<plugin>
 				<groupId>com.github.eirslett</groupId>
 				<artifactId>frontend-maven-plugin</artifactId>
@@ -88,10 +89,7 @@
 				<configuration>
 					<workingDirectory>${project.basedir}</workingDirectory>
 					<installDirectory>${project.build.directory}</installDirectory>
-					<nodeVersion>v18.20.4</nodeVersion>
-					<environmentVariables>
-						<NODE_OPTIONS>--openssl-legacy-provider</NODE_OPTIONS>
-					</environmentVariables>
+					<nodeVersion>v22.14.0</nodeVersion>
 				</configuration>
 				<executions>
 					<execution>
@@ -191,6 +189,7 @@
 					<baseDir>src/main/resources</baseDir>
 				</configuration>
 			</plugin>
+			
 		</plugins>
 	</build>
 </project>

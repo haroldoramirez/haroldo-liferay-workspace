@@ -1,0 +1,38 @@
+{
+	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+	"version": 1,
+	"newProjectRoot": "projects",
+	"projects": {
+		"angular-liferay-start-portlet": {
+			"projectType": "application",
+			"root": "",
+			"sourceRoot": "src/main/resources/META-INF/resources",
+			"prefix": "app",
+			"architect": {
+				"build": {
+					"builder": "@angular/build:application",
+					"options": {
+						"outputPath": {
+							"base": "target/classes/META-INF/resources/dist",
+							"browser": ""
+						},
+						"index": "src/main/resources/META-INF/resources/index.html",
+						"browser": "src/main/resources/META-INF/resources/lib/main.ts",
+						"polyfills": [],
+						"tsConfig": "tsconfig.json",
+						"outputHashing": "none",
+						"optimization": true,
+						"extractLicenses": false
+					},
+					"configurations": {
+						"production": {
+							"optimization": true,
+							"outputHashing": "none",
+							"sourceMap": false
+						}
+					}
+				}
+			}
+		}
+	}
+}

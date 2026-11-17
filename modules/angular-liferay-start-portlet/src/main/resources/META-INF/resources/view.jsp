@@ -1,7 +1,5 @@
 <%@ include file="/init.jsp" %>
 
-<div id="<portlet:namespace />"></div>
+<app-start-portlet></app-start-portlet>
 
-<aui:script require="<%= mainRequire %>">
-	main.default('#<portlet:namespace />');
-</aui:script>
+<script type="module" src="<%= request.getContextPath() %>/dist/main.js"></script>

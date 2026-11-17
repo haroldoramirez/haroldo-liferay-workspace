@@ -1,22 +1,19 @@
 {
+	"compileOnSave": false,
 	"compilerOptions": {
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"lib": ["es2015", "dom"],
-		"module": "commonjs",
-		"moduleResolution": "node",
-		"outDir": "target/classes/META-INF/resources/lib",
-		"sourceMap": true,
-		"skipLibCheck": true,
+		"outDir": "./target/tsc",
 		"strict": false,
-		"target": "es5",
-		"typeRoots": ["./node_modules/@types"],
-		"types": ["node"]
+		"sourceMap": true,
+		"declaration": false,
+		"experimentalDecorators": true,
+		"moduleResolution": "bundler",
+		"importHelpers": true,
+		"target": "ES2022",
+		"module": "ES2022",
+		"skipLibCheck": true,
+		"lib": ["ES2022", "dom"]
 	},
 	"include": [
-		"src/**/*.ts"
-	],
-	"exclude": [
-		"node_modules"
+		"src/main/resources/META-INF/resources/lib/**/*.ts"
 	]
 }
