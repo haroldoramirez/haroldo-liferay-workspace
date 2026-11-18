@@ -21,10 +21,45 @@
 		<maven.compiler.release>21</maven.compiler.release>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<bundle.version>${project.version}</bundle.version>
+		<liferay.home>H:/1.Ambiente/Ambiente-Liferay-7.4/4-liferay-portal-tomcat-7.4.3.132-ga132-1739912568-H2</liferay.home>
+		<liferay.deploy.dir>${liferay.home}/deploy</liferay.deploy.dir>
 	</properties>
 
 	<!-- ================= PROFILES ================= -->
 	<profiles>
+		<profile>
+			<id>deploy</id>
+			<!-- Copia o .jar gerado no package diretamente para a pasta deploy do Liferay -->
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-resources-plugin</artifactId>
+						<version>3.3.1</version>
+						<executions>
+							<execution>
+								<id>copy-jar-to-liferay-deploy</id>
+								<phase>package</phase>
+								<goals>
+									<goal>copy-resources</goal>
+								</goals>
+								<configuration>
+									<outputDirectory>${liferay.deploy.dir}</outputDirectory>
+									<resources>
+										<resource>
+											<directory>${project.build.directory}</directory>
+											<includes>
+												<include>${project.build.finalName}.jar</include>
+											</includes>
+										</resource>
+									</resources>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 		<profile>
 			<id>standalone</id>
 			<!-- Ative apenas se compilar este módulo isoladamente fora do workspace -->
